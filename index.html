@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+   
+  <h1>Teste</h1>
+
+  <input type="file" id="fileInput">
+
+  <table class="table">
+    <thead>
+      <th>Copiar</th>
+      <th>Nº Operação</th>
+      <th>Nome Cliente</th>
+      <th>Valor</th>  
+      <th>Agência</th>  
+      <th>Conta</th> 
+      <th>Cola</th> 
+    </thead>
+    <tbody>
+  
+    </tbody>
+  </table>
+  <script id="tmplLinha" type="text/template">
+    <tr>
+      <td><button onclick="copiarId(this)" id= {{NumeroOperacao}} >Copiar</button></td>
+      <td>{{NumeroOperacao}}</td>
+      <td>{{Cliente}}</td>
+      <td>{{Valor}}</td>
+      <td><input type="text"></td>
+      <td><input type="text" id= {{NumeroControle}} ></td>
+      <td><button onclick="colaconta(this)" value= {{NumeroControle}} >Colar</button></td>
+    </tr>
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
