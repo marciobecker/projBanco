@@ -1,0 +1,28 @@
+@media print {
+  .no-print {
+    display: none;
+  }
+  .areaAgencia, .areaConta {
+    border-color: white;
+    border: 0px solid white;
+  }
+}
+
+.areaAgencia {
+  width: 50px;
+  text-align: right;
+}
+
+.areaConta {
+  width: 100px;
+  text-align: right;
+}
+
+.valor {
+  text-align: right;
+  padding-left: 30px;
+}
+
+.linha {
+  height: 25px;
+}

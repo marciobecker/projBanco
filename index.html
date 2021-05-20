@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
    
   <h1>Teste</h1>
 
-  <input type="file" id="fileInput">
+  <th><input type="file" id="fileInput" value="Busca Relatório" class="no-print"></th>
+  <th><button onclick="window.print()" class="no-print">Imprime</button></th>
 
   <table class="table">
     <thead>
-      <th>Copiar</th>
+      <th class="no-print">Copiar</th>
       <th>Nº Operação</th>
       <th>Nome Cliente</th>
-      <th>Valor</th>  
+      <th class="valor">Valor</th>  
       <th>Agência</th>  
       <th>Conta</th> 
-      <th>Cola</th> 
+      <th class="no-print">Cola</th> 
     </thead>
     <tbody>
   
     </tbody>
   </table>
+  <div>
+    <h3>Valor total R$ ###### </h3>
+  </div>
+
   <script id="tmplLinha" type="text/template">
-    <tr>
-      <td><button onclick="copiarId(this)" id= {{NumeroOperacao}} >Copiar</button></td>
+    <tr class="linha">
+      <td class="no-print"><button onclick="copiarId(this)" id= {{NumeroOperacao}} class="no-print">Copiar</button></td>
       <td>{{NumeroOperacao}}</td>
       <td>{{Cliente}}</td>
-      <td>{{Valor}}</td>
-      <td><input type="text"></td>
-      <td><input type="text" id= {{NumeroControle}} ></td>
-      <td><button onclick="colaconta(this)" value= {{NumeroControle}} >Colar</button></td>
+      <td class="valor" >{{Valor}}</td>
+      <td><input class="areaAgencia" type="text"></td>
+      <td><input class="areaConta" type="text" id= {{NumeroControle}} ></td>
+      <td class="no-print"><button onclick="colaconta(this)" value= {{NumeroControle}} class="no-print">Colar</button></td>
     </tr>
   </script>
 
