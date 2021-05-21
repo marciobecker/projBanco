@@ -8,6 +8,19 @@
   }
 }
 
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+}
+
+.botao2, .botao1 {
+  border-radius: 12px;
+  padding: 12px 28px;
+  background-color: #1b365f;
+  color: white;
+  font-size: 15px;
+}
+
 .areaAgencia {
   width: 50px;
   text-align: right;
@@ -25,4 +38,9 @@
 
 .linha {
   height: 25px;
+}
+
+.princ {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }

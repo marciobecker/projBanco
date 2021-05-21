@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8?>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -10,26 +10,26 @@
    
   <h1>Teste</h1>
 
-  <th><input type="file" id="fileInput" value="Busca Relatório" class="no-print"></th>
-  <th><button onclick="window.print()" class="no-print">Imprime</button></th>
+  <th><input type="file" id="fileInput" value="Busca Relatório" class="botao2 no-print"></th>
+  <th><button onclick="window.print()" class="botao1 no-print">Imprime</button></th>
 
   <table class="table">
-    <thead>
-      <th class="no-print">Copiar</th>
-      <th>Nº Operação</th>
-      <th>Nome Cliente</th>
-      <th class="valor">Valor</th>  
-      <th>Agência</th>  
-      <th>Conta</th> 
-      <th class="no-print">Cola</th> 
-    </thead>
+    <div class="principal">
+      <thead>
+        <th class="princ no-print">Copiar</th>
+        <th class="princ">Nº Operação</th>
+        <th class="princ">Nome Cliente</th>
+        <th class="princ">Valor</th>  
+        <th class="princ">Agência</th>  
+        <th class="princ">Conta</th> 
+        <th class="princ no-print">Cola</th> 
+      </thead>
+    </div>
     <tbody>
   
     </tbody>
   </table>
-  <div>
-    <h3>Valor total R$ ###### </h3>
-  </div>
+  <div class="somaValor"></div>
 
   <script id="tmplLinha" type="text/template">
     <tr class="linha">
