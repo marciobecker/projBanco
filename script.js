@@ -109,3 +109,15 @@ function regexIndexOf(string, regex, startpos) {
   var indexOf = string.substring(startpos || 0).search(regex);
   return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf;
 };
+
+function formatarCampo(campoTexto) {
+  if (campoTexto.value.length <= 10) {
+      campoTexto.value = mascaraConta(campoTexto.value);
+  }
+}
+function retirarFormatacao(campoTexto) {
+  campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g,"");
+}
+function mascaraConta(valor) {
+  return valor.replace(/(\d{2})(\d{6})(\d{1})(\d{1})/g,"\$1.\$2.\$3\-\$4");
+};

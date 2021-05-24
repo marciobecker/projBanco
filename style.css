@@ -27,7 +27,7 @@ body {
 }
 
 .areaConta {
-  width: 100px;
+  width: 90px;
   text-align: right;
 }
 
@@ -43,4 +43,8 @@ body {
 .princ {
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
 }

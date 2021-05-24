@@ -8,7 +8,7 @@
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
    
-  <h1>Teste</h1>
+  <h3>Obs: Esta ferramenta só trata do histórico 0473, os demais como 306 e 412 devem ser feitos manualmente.</h3>
 
   <th><input type="file" id="fileInput" value="Busca Relatório" class="botao2 no-print"></th>
   <th><button onclick="window.print()" class="botao1 no-print">Imprime</button></th>
@@ -38,7 +38,8 @@
       <td>{{Cliente}}</td>
       <td class="valor" >{{Valor}}</td>
       <td><input class="areaAgencia" type="text"></td>
-      <td><input class="areaConta" type="text" id= {{NumeroControle}} ></td>
+      <td><input class="areaConta" onfocus="javascript: retirarFormatacao(this);" 
+        onblur="javascript: formatarCampo(this);" maxlength="14" type="text" id= {{NumeroControle}} ></td>
       <td class="no-print"><button onclick="colaconta(this)" value= {{NumeroControle}} class="no-print">Colar</button></td>
     </tr>
   </script>
