@@ -95,16 +95,6 @@ function copiarId(botao) {
   document.body.removeChild(inputTest);
 };
 
-function colaconta(botao) {
-  const elemento = botao.value;
-  let cola = document.getElementById(elemento);
-  cola.value = '';
-  navigator.clipboard.readText()
-  .then((text)=>{
-    cola.value = text;
-  });
-};
-
 function regexIndexOf(string, regex, startpos) {
   var indexOf = string.substring(startpos || 0).search(regex);
   return (indexOf >= 0) ? (indexOf + (startpos || 0)) : indexOf;

@@ -22,7 +22,6 @@
         <th class="princ">Valor</th>  
         <th class="princ">Agência</th>  
         <th class="princ">Conta</th> 
-        <th class="princ no-print">Cola</th> 
       </thead>
     </div>
     <tbody>
@@ -39,11 +38,9 @@
       <td class="valor" >{{Valor}}</td>
       <td><input class="areaAgencia" type="text"></td>
       <td><input class="areaConta" onfocus="javascript: retirarFormatacao(this);" 
-        onblur="javascript: formatarCampo(this);" maxlength="14" type="text" id= {{NumeroControle}} ></td>
-      <td class="no-print"><button onclick="colaconta(this)" value= {{NumeroControle}} class="no-print">Colar</button></td>
+        onblur="javascript: formatarCampo(this);" maxlength="14" type="text"></td>
     </tr>
   </script>
-
 
   <script src="script.js"></script>
 </body>
