@@ -101,7 +101,7 @@ function regexIndexOf(string, regex, startpos) {
 };
 
 function formatarCampo(campoTexto) {
-  if (campoTexto.value.length <= 10) {
+  if (campoTexto.value.length === 10) {
       campoTexto.value = mascaraConta(campoTexto.value);
       let pai = campoTexto.parentElement;
       pai.parentElement.style.backgroundColor = 'rgb(115, 148, 187)';
